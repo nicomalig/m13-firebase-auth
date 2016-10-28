@@ -32,7 +32,7 @@ $(function() {
         name: firebase.auth().currentUser.displayName,
         chat: $("#message").val()
       });
-      #('#message').val('');
+      $('#message').val('');
     });
 
 

@@ -16,7 +16,7 @@ $(function() {
         // Get email, password, and display name
         var userEmail = $('#email').val();
         var userPassword = $('#password').val();
-        var userDisplayName = $('displayName');
+        var userDisplayName = $('#display-name').val();
 
         // Create user, then set the user's display name
         firebase.auth().createUserWithEmailAndPassword(userEmail, userPassword).
@@ -80,7 +80,7 @@ $(function() {
 
     // Authentication Change: see if a user is already signed in, and redirect
     var checked;
-    firebase.onAuthStateChange(function(user) {
+    firebase.auth().onAuthStateChanged(function(user) {
       if (checked == true) {
         // Rediriect to index.html if there is a user and the pathname isn't '/'
         if (user && window.location.pathname.indexOf("sign") != -1) {
