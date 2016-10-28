@@ -33,9 +33,34 @@
     <section class="container">
         <h3>Sign up for an Account</h3>
         <!-- Input your form here -->
+        <form class="col s12 authenticate" id="sign-up">
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="email" type="email" class="validate">
+              <label for="email">Email</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="password" type="password" class="validate">
+              <label for="password">Password</label>
+            </div>
+          </div>
+
+          <button type="submit" name="action" class="btn waves-effect waves-light">Sign Up
+            <i class="material-icons right">send</i>
+          </button>
+        </form>
 
         <div>
             <!-- Paragraph + Link to sign-in form -->
+            <p class="sign-in">
+              <em>Already have an account?</em>
+              <a href="sign-in.html">
+                <button class="btn waves-effect waves-light" name="button">Sign In</button>
+              </a>
+            </p>
         </div>
     </section>
 </body>
