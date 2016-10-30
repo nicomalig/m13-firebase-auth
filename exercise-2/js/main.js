@@ -19,7 +19,7 @@ $(function() {
 		window.location = "./views/user.html"
 	}
 
-	var authFunc = function(service) {
+	var authFunc = function (service) {
 		// Check to see if the service is google or github and set
 		// provider accordingly (more info on login with 3rd party
 		// providers can be found in the firebase documentation).
@@ -46,16 +46,16 @@ $(function() {
 					userRef.child(result.user.uid).set({
 						"name": result.user.displayName,
 						"photoURL": result.user.photoURL
-					}).then(function() {
+					}).then(function () {
 						// Navigate to the user.html page once sign in is complete
-						window.location = ".views/user.html"
+						window.location = "./views/user.html";
 					});
 				} else {
-					window.location = "./views/user.html"
+					window.location = "./views/user.html";
 				}
-			})
-		})
-	}
+			});
+		});
+	};
 
 	$("#google-signin").on("click", function() {
 		authFunc("google");
