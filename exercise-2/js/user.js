@@ -1,11 +1,11 @@
 $(function() {
 	// Set the config object with the values for your application
 	var config = {
-		apiKey: "",
-		authDomain: "",
-		databaseURL: "",
-		storageBucket: "",
-		messagingSenderId: ""
+		apiKey: "AIzaSyCVmFkJLhdPzdUw8_avijSg7ulfLUkASjo",
+		authDomain: "m13-e2.firebaseapp.com",
+		databaseURL: "https://m13-e2.firebaseio.com",
+		storageBucket: "m13-e2.appspot.com",
+		messagingSenderId: "347930206303"
 	};
 	firebase.initializeApp(config);
 
